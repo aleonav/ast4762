@@ -1,0 +1,147 @@
+Leo Murch
+Log for AST 4762, Fall 2026
+
+*****IN: Wed Aug 26 15:10:00 EDT 2026
+Created the ast4762 directory with all outlined folders, created log in the base
+directory as well. 
+Problem 2 Below:
+
+Name: Leo Murch
+Username: aleonav
+What astronomy classes have you taken?
+	Solar System Astro, Stellar astrophys, intro to astronomy
+Are you generally comfortable with calculus and physics?
+	I would say so
+Have you ever programmed a computer?
+	Taken 3150, some other in different languages to python.
+In what language(s)?
+	Python, C, Java
+Have you taken a programming class, and if so which?
+	Intro to C, Intro to Python, Object Oriented, PHZ3150
+Have you taken statistics or probability?
+	no
+Will you be attending the DPS conference this year, or will
+you be away otherwise?
+	not aware of it, don't know much about it.
+Why are you taking this course?
+	Course req / really have taken an interest to programming with data analytical 
+	applications (had a lotta fun in 3150)
+Are there particular topics you hope to learn?
+	I want to see a lot of the techniques, and just have more hours programming
+If you have programmed outside of a course before, please
+briefly describe:
+	Just within classes listed above, also used python within research.
+If you have worked with scientific data before, briefly
+describe your experience:
+	Mostly within 3150's sample files, such as some from the HST.
+Please describe any projects in astronomy, including
+involvement in amateur groups, owning a telescope,
+research, etc.:
+	Coursework within 3150, I also got a telescope for like 100 of a rich old guy,
+	so I usually take that out in winter when there's a nice clear look at the sky
+	and it isn't hot out.
+
+Problem 3 (explain how to do the steps):
+•I made a folder within ast4762/Homework/ called <hw0_aleonav>
+•I'll cmd_c cmd_v this file into that same folder once I write the out entry
+•right click the mentioned folder, compress it, and submit that to canvas
+
+*****OUT: Wed Aug 26 15:35:49 EDT 2026
+
+*****IN: Fri Aug 28 15:03:33 EDT 2026
+going thru setups and seeing which software i have vs which i need in class.
+
+i should have everything? I installed miniconda even tho i dont think I need it to install
+any software, but i might need it for packages
+
+gonna install virtual box now
+nvm i don't need it i alr got a mac
+
+opening hw 1 and starting it:
+
+Problem 1:
+	•made the folder and the log is already open
+Problem 2:
+	•took a screenshot of jupyter with the built in mac screenshot and put it in the folder,
+	naming it accordingly
+	•python version is Python 3.14.7
+	•took a screenshot of github desktop, named it graph2. shows another repository atm
+Problem 3:
+	•stokes stuff isnt working at the moment, i'll leave this section not finished.
+Problem 4:
+	•i'll copy this into h1 folder, compress, upload it to webcourses and copy it to handin.
+
+*****OUT: Fri Aug 28 15:45:41 EDT 2026
+
+*****IN: Mon Aug 31 11:06:41 EDT 2026
+Stokes is now working, so I'm gonna do the rest of homework 1 by logging in and taking a sc
+
+Problem 3:
+	•typed ls into the terminal once connected to stokes, showing my NID logged in.
+	typed my password in wrong once so there's 1 failed login attempt lol
+	named it problem3_graph1, I'll zip the new folder with the image and log and submit again.
+
+****OUT: Mon Aug 31 11:14:09 EDT 2026
+
+****IN: Tue Sep  1 20:46:02 EDT 2026
+logging in to do the peer reviews for the class, probably wont type much about the content.
+both looked good, aside from one having the log file be a .txt instead of a .log
+
+i'll log out since i've submitted both peer reviews for the night and continue tryna write my essays.
+*****OUT Tue Sep  1 21:15:37 EDT 2026
+
+*****IN: Wed Sep  2 14:33:08 EDT 2026
+in class
+*****OUT Wed Sep  2 16:21:21 EDT 2026
+
+*****IN: Thu Sep  3 17:42:57 EDT 2026
+gonna start working on hw 2 now that im still on campus
+*there is a note about github being here, but we haven't set up a classroom yet.
+i'll leave it until we set it up and continue without it for now
+
+Problem_1:
+Steps to make the folder and the hw2.py file:
+	•cd ~/UCF/FA26/ast4762/homework #get into my hw directory
+	•touch hw2_aleonav.py #make the hw2 .py file for the assingment.
+	#oops i forgot to make the folder
+	•mkdir hw2_aleonav
+	•mv hw2_aleonav.py hw2_aleonav/ #to move the .py into the directory
+
+Problem_2:
+looking at the problem i think i'll do this in a notebook actually so i can make sure
+what im making is right.
+•rm -i hw2_aleonav.py (yes i am sure i wanna delete)
+•make the jupyter notebook w/in the webapp since im already there
+
+i keep on having to delete my \n characters after print i forget that python does it for you lol
+
+printing the answers to the questions in the hw within the python file as asked.
+
+b) how to scale an array i forgot
+stack overflow entry talking about rescaling (normalizing), there's a np function for it
+
+i'm gonna take a break right now, i've been sitting in COS for a while and i wanna go home 
+*****OUT Thu Sep  3 19:08:45 EDT 2026
+
+*****IN: Fri Sep  4 14:43:22 EDT 2026
+within class on friday, starting zoom lecture
+*****OUT Fri Sep  4 16:20:59 EDT 2026
+
+*****IN: Wed Sep  9 12:10:07 EDT 2026
+had to submit a draft for a really long scholarship, so im finishing the hw now
+
+ill continue to write all the comments and entries within the homework in the .py
+
+Now that i've finished problem 5, I'll export this as a .py file and test it within Stokes
+to make sure that everything is working, since i tested it in a notebook.
+
+Problem 6:
+	a) logged into stokes by ssh nid@stokes etc
+	b) mkdir homework > mkdir hw2_aleonav
+	c) first made another window, scp to the NID of my hw2 py file
+	scp didnt work, file not showing up in stokes
+	tried with a test file, its not copying anything with scp -r or w/out the -r.
+	logging back in and out doesnt work either
+	missing the colon at the end, got it, py file is there.
+	d) loaded the anaconda thing, ran the py file, everything went through
+	f) now i'll get the repo working and follow the guide real quick

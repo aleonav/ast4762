@@ -1,0 +1,84 @@
+Leo Murch
+Log for AST 4762, Fall 2026
+
+*****IN: Wed Aug 26 15:10:00 EDT 2026
+Created the ast4762 directory with all outlined folders, created log in the base
+directory as well. 
+Problem 2 Below:
+
+Name: Leo Murch
+Username: aleonav
+What astronomy classes have you taken?
+	Solar System Astro, Stellar astrophys, intro to astronomy
+Are you generally comfortable with calculus and physics?
+	I would say so
+Have you ever programmed a computer?
+	Taken 3150, some other in different languages to python.
+In what language(s)?
+	Python, C, Java
+Have you taken a programming class, and if so which?
+	Intro to C, Intro to Python, Object Oriented, PHZ3150
+Have you taken statistics or probability?
+	no
+Will you be attending the DPS conference this year, or will
+you be away otherwise?
+	not aware of it, don't know much about it.
+Why are you taking this course?
+	Course req / really have taken an interest to programming with data analytical 
+	applications (had a lotta fun in 3150)
+Are there particular topics you hope to learn?
+	I want to see a lot of the techniques, and just have more hours programming
+If you have programmed outside of a course before, please
+briefly describe:
+	Just within classes listed above, also used python within research.
+If you have worked with scientific data before, briefly
+describe your experience:
+	Mostly within 3150's sample files, such as some from the HST.
+Please describe any projects in astronomy, including
+involvement in amateur groups, owning a telescope,
+research, etc.:
+	Coursework within 3150, I also got a telescope for like 100 of a rich old guy,
+	so I usually take that out in winter when there's a nice clear look at the sky
+	and it isn't hot out.
+
+Problem 3 (explain how to do the steps):
+•I made a folder within ast4762/Homework/ called <hw0_aleonav>
+•I'll cmd_c cmd_v this file into that same folder once I write the out entry
+•right click the mentioned folder, compress it, and submit that to canvas
+
+*****OUT: Wed Aug 26 15:35:49 EDT 2026
+
+*****IN: Fri Aug 28 15:03:33 EDT 2026
+going thru setups and seeing which software i have vs which i need in class.
+
+i should have everything? I installed miniconda even tho i dont think I need it to install
+any software, but i might need it for packages
+
+gonna install virtual box now
+nvm i don't need it i alr got a mac
+
+opening hw 1 and starting it:
+
+Problem 1:
+	•made the folder and the log is already open
+Problem 2:
+	•took a screenshot of jupyter with the built in mac screenshot and put it in the folder,
+	naming it accordingly
+	•python version is Python 3.14.7
+	•took a screenshot of github desktop, named it graph2. shows another repository atm
+Problem 3:
+	•stokes stuff isnt working at the moment, i'll leave this section not finished.
+Problem 4:
+	•i'll copy this into h1 folder, compress, upload it to webcourses and copy it to handin.
+
+*****OUT: Fri Aug 28 15:45:41 EDT 2026
+
+*****IN: Mon Aug 31 11:06:41 EDT 2026
+Stokes is now working, so I'm gonna do the rest of homework 1 by logging in and taking a sc
+
+Problem 3:
+	•typed ls into the terminal once connected to stokes, showing my NID logged in.
+	typed my password in wrong once so there's 1 failed login attempt lol
+	named it problem3_graph1, I'll zip the new folder with the image and log and submit again.
+
+****OUT: Mon Aug 31 11:14:09 EDT 2026
