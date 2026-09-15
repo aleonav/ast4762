@@ -264,3 +264,19 @@ gonna work for like 10~15 mins on the hw
 
 d) made the function return var1**2, i think this should be enough.
 I'll use github desktop now to commit the files and push to origin after I've saved all this.
+(this was not a good idea on my hotspot its taking a while)
+(cant reach it, ill push them when i get on my wifi at home)
+
+e) oops already did this in d, but the function has already been named square and i made it return var1**2
+made examples of float, array, int.
+
+log out
+*****OUT Tue Sep 15 15:05:42 EDT 2026
+
+*****IN Tue Sep 15 17:49:47 EDT 2026
+back at home, time to resume, pushing everything to git now that i have internet
+
+f) seems to be working, called square() for ints, arrays, floats, all are giving the right outputs.
+
+g) ill go through and remove most of the stuff that isn't needed / doesn't apply to the func.
+removed some of the notes and the references section, i'll save and commit to github.
