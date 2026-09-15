@@ -218,3 +218,49 @@ got the fig plotted and saved it as a png
 ill put everything up in the tar.gz, put it to stokes and github and canvas
 
 *****OUT Fri Sep 11 19:46:24 EDT 2026
+
+*****IN: Sat Sep 12 15:34:32 EDT 2026
+just realized i submitted a notebook instead of a .py, gonna fix that rq
+
+alright got that done, ill put this in the folder compress and upload
+*****OUT Sat Sep 12 15:43:04 EDT 2026
+
+*****IN: Mon Sep 14 14:37:25 EDT 2026
+in class
+*****OUT Mon Sep 14 16:17:51 EDT 2026
+
+*****IN: Mon Sep 14 18:27:49 EDT 2026
+gonna start hw3 cause im gonna forget later ik it
+
+Problem 1:
+open terminal in folder, mkdir for the hw3 directory, and the notebook file 
+off to prob 2
+
+Problem 2:
+a) gonna make another file named hw3_aleonav_support_functions.py as detailed in the format rules
+
+b) stuff needed for the support file:
+docstring:explanation of the module at the top of the file before anything.
+
+imports: needed to import the packages that you'll be using w/in the file, or other
+	functions from other files.
+
+functions: a lot goes into this part.
+	def: need to define a function, and its arguments
+	docstring: long explanation with multiple parts that describes in a detailed manner the purpose
+		of the function, what it takes in, what it does, what it spits out, correct syntax, related functions,
+		errors and exceptions, literature, examples, revisions, and references.
+	body: where the function part of the function lives
+	pass: to pass through the function so that nothing happens when you call it (unless you want something to happen)
+
+c) i dont know what it does yet, so i wont really remove much atm. i'll just clean up some of the
+tutorial-esque comments.
+
+gonna go back home now 
+*****OUT Mon Sep13 19:47:21 EDT 2026
+
+*****IN Tue Sep 15 14:43:08 EDT 2026
+gonna work for like 10~15 mins on the hw
+
+d) made the function return var1**2, i think this should be enough.
+I'll use github desktop now to commit the files and push to origin after I've saved all this.
