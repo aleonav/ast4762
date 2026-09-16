@@ -349,3 +349,15 @@ problem ran though, i see print statements but no graph output (because it dosen
 the pdf is there tho, so i know it worked.
 
 i'll commit this thru github desktop now.
+
+okay it just told me to commit and now i need to take a screenshot and commit again cmon 
+
+okay now it tells me to copy the rest of the content to stokes why wouldnt i just wait to do that until 
+now and THEN test on stokes : (
+	(im going to delete the whole folder and copy my directory instead), scp -r
+	there we go 
+
+i'll out and copy this all to stokes and tar.gz it with 
+tar zcf hw3directory, scp it to my handin folder.
+
+*****OUT Wed Sep 16 12:03:41 EDT 2026
