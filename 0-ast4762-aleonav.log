@@ -306,3 +306,46 @@ due to the nature of it being n# of points and not a function. I'll change that 
 to the revisions.
 
 forgot to make a sc of 2(g), looked in the history and took one of what it was then.
+
+
+
+i know it'll be the day of, but i gotta give some time to other assignemnts, so i'll 
+try and finish up once i get to school tmr and before class.
+*****OUT Tue Sep 15 21:46:27 EDT 2026
+
+*****IN Wed Sep 16 11:16:19 EDT 2026
+doing prob4 now
+
+Problem 4:
+for the rubric i'll go ahead and make the categories first then split the 20 points
+between them after.
+
+Rubric:
+Problem_3 (20 points total)
+	1)Function Accuracy (8 points)
+		•is squareplot written in the support function? (4 points)
+		•does squareplot take in 4 total arguments? (2 points)
+		•is saveplot = False optional with a default value? (2 points)
+	2)x and y values (4 points)
+		•is an inclusive even spaced array made using the 3 variables given? (2 points)
+		•is square() called to make y=square(x)? (2 points)
+	3)plotting (8 points)
+		•are the y vs x points plotted using a plt function? (2 points)
+		•are the xlabel, ylabel, and title all labeled correctly? (2 points)
+		•is there an if statement to catch if saveplot is not false? (1 point) is it saved as a pdf? (1 point)
+		•is plt.show() called to display the graph? (2 points)
+
+I'll save this in a separate txt file now that I have it here.
+
+time to upload everything to stokes for prob5,
+Problem 5:
+sign in with ssh nid@stokes.ist.ucf.edu, cd to homework/ and mkdir hw3 folder.
+make another terminal window (in hw3 folder), scp the py to nid@stokes.ist.ucf.edu:~/homework?hw3_aleonav/
+	cool the copying worked
+activate env with module load anaconda
+	the rubric lied to me i need to copy my support functions as well
+	copy that, run again
+problem ran though, i see print statements but no graph output (because it dosent work on stokes, through shell)
+the pdf is there tho, so i know it worked.
+
+i'll commit this thru github desktop now.
