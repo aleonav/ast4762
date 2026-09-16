@@ -298,3 +298,11 @@ back
 
 time to create square plot
 made a function, docstring, etc. I'll commit to github then test it.
+
+oops forgot to restart the kernel
+
+its plotting a line since i used plt.plot(), but I think having a scatter would be better
+due to the nature of it being n# of points and not a function. I'll change that and make an edit
+to the revisions.
+
+forgot to make a sc of 2(g), looked in the history and took one of what it was then.

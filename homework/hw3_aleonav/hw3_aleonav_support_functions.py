@@ -5,12 +5,9 @@ by using python's built in [x]**2 opperator.
 
 import os 
 import numpy as np
-import scipy as sp
-import matplotlib as mpl
 import matplotlib.pyplot as plt 
-import astropy.io.fits as fits
 
-def square(var1) :
+def square(var1):
     #this is our function's docstring!
     """Takes a scalar / array input and returns its square.
 
@@ -42,7 +39,7 @@ def square(var1) :
     >>> var1 = np.array([1, 2, 3, 4])
     >>> var1_sq = square(var1)
     >>> print(var1_sq)
-    [1, 4, 9, 16]
+    [1 4 9 16]
 
     >>> var2 = 3
     >>> var2_sq = square(var2)
@@ -113,6 +110,8 @@ def squareplot(low_end, high_end, n_points, saveplot=False):
     Revisions
     ---------
     2026-09-15: Created squareplot in its current form
+    2026-09-15: changed plt.plot() to plt.scatter() to plot points
+    instead of an interpolated line.
     """
 
     #linespace makes an inclusive spaced out array
@@ -122,7 +121,7 @@ def squareplot(low_end, high_end, n_points, saveplot=False):
     y = square(x)
 
     #plot y/x
-    plt.plot(x,y)
+    plt.scatter(x,y)
     plt.xlabel('Input')
     plt.ylabel('Output')
     plt.title('Square Function')
