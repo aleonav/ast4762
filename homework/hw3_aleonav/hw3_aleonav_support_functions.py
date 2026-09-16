@@ -62,3 +62,75 @@ def square(var1) :
     #square and return var1, no pass needed since it does something.
     return var1 **2
 
+def squareplot(low_end, high_end, n_points, saveplot=False):
+    """Plots the squares of evenly spaced numbers over a given range.
+
+    Takes as input the low and high ends of a range (high end inclusive) and
+    the number of points to plot. Builds an evenly spaced array x, calls
+    square() once to get y = x**2, and plots y vs x. 
+    If saveplot is not False,
+    saves the figure to the filename given by saveplot.
+
+    Parameters
+    ----------
+    low_end : scalar (int, float, double, etc)
+        Low end of the range to plot.
+    high_end : scalar (int, float, double, etc)
+        High end of the range to plot. Inclusive.
+    n_points : int
+        Number of evenly spaced points from low_end to high_end, inclusive.
+    saveplot : bool or str, optional
+        If False (default), do not save the plot. If a string, save the plot
+        as a PDF using that filename. Filename is not hardcoded.
+
+    Returns
+    -------
+    None
+        Displays (and optionally saves) a plot.
+
+    See Also
+    --------
+    square : Function that returns the square of a scalar / array.
+    np.linspace() : Numpy's evenly spaced array function.
+    plt.plot() : Matplotlib's plot function.
+    plt.savefig() : Matplotlib's save figure function.
+
+    Notes
+    -----
+    Uses np.linspace to create x from low_end to high_end (inclusive) with
+    n_points points, then calls square(x) exactly once to get y. The plot
+    is labeled "Input" on the x-axis, "Output" on the y-axis, and titled
+    "Square Function".
+
+    Examples
+    --------
+    >>> squareplot(1, 7, 5)
+    #plots the squares of 1, 2.5, 4, 5.5, and 7
+
+    >>> squareplot(1, 7, 5, saveplot='squareplot_1to7.pdf')
+    #same plot, saved to squareplot_1to7.pdf
+
+    Revisions
+    ---------
+    2026-09-15: Created squareplot in its current form
+    """
+
+    #linespace makes an inclusive spaced out array
+    x = np.linspace(low_end, high_end, n_points)
+
+    #call square to get the square of this array x
+    y = square(x)
+
+    #plot y/x
+    plt.plot(x,y)
+    plt.xlabel('Input')
+    plt.ylabel('Output')
+    plt.title('Square Function')
+
+    #do an ifstate to see if the saveplot variable is false or not
+    if saveplot is not False: plt.savefig(saveplot)
+
+    #show the plot regardless
+    plt.show()
+
+    pass

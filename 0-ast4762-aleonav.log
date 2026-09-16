@@ -280,3 +280,21 @@ f) seems to be working, called square() for ints, arrays, floats, all are giving
 
 g) ill go through and remove most of the stuff that isn't needed / doesn't apply to the func.
 removed some of the notes and the references section, i'll save and commit to github.
+
+time to eat some food
+*****OUT Tue Sep 15 18:07:19 EDT 2026
+
+*****IN Tue Sep 15 18:33:57 EDT 2026
+resuming hw3,
+
+on part (i), asks for a 5x5 array with floats from 0-25. If I want it to be neat, i would need 0-24 (25 in total).
+Currently its 26 in total, and is really messy, but I'll keep it as is now.
+
+okay 3 is really long im gonna take a shower and get comfy before i start on it
+*****OUT Tue Sep 15 19:10:57 EDT 2026
+
+*****IN Tue Sep 15 20:36:44 EDT 2026
+back
+
+time to create square plot
+made a function, docstring, etc. I'll commit to github then test it.
