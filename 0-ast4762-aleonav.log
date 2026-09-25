@@ -432,7 +432,7 @@ i will .tar.gz but i still have to close this log out. I'll then scp from stokes
 *****OUT: 	Mon Sep 21 13:35:53 EDT 2026
 
 
-*****IN: Mon Sep 21 14:29:22 EDT 2026
+*****IN: 	Mon Sep 21 14:29:22 EDT 2026
 in class
 
 all the sys and random errors i can think of when measuring dr. harrington:
@@ -445,7 +445,7 @@ no more class
 *****OUT: 	Mon Sep 21 16:21:35 EDT 2026
 
 
-*****IN: Tue Sep 22 13:44:51 EDT 2026
+*****IN: 	Tue Sep 22 13:44:51 EDT 2026
 working on p2 some more:
 
 comments on the code are within the py file by the way, in case you're looking for them.
@@ -457,3 +457,47 @@ and copy it all, tar it, download, and put it in handin and submit as well.
 
 I'll push it all to github after the fact too.
 *****OUT: 	Tue Sep 22 15:04:41 EDT 2026
+
+
+*****IN: 	Wed Sep 23 18:14:55 EDT 2026
+gonna do the peer reviews now for hw4
+finished, hw4 was pretty short.
+*****OUT:	Wed Sep 23 18:34:04 EDT 2026
+
+
+*****IN:	Thu Sep 24 17:26:07 EDT 2026
+gonna start on p3 
+make the folde with mkdir, notebook, the usual stuff
+
+Problem 1:
+all notes on code are within the py file
+
+#ANSWERS FOR PART D
+#def not a good fit of the data.
+#it does all it can, but the differences are just too much, probability is even 0 on getting a higher one.
+
+#two good reasons on why it cant fit the data could be:
+#1) 
+#the residuals of the model to the actual data is much larger than the assumed sigma of 0.5. Chi_sq ends up being prob massive lets see
+#lmfao 240k
+#lets compare with the 1st:
+#lets see how many points there are:
+#100 points - 2 DOF is 98 for a good fit, so this is actually rlly good, better than 200k
+
+Problem 2:
+notes on code w/in pyfile
+
+i seem to be all done which is nice, i wont submit yet just in case we go over anything tmr but i'll export it to a py file.
+
+*****OUT: 	Thu Sep 24 19:41:02 EDT 2026
+
+
+*****IN:	Fri Sep 25 13:40:05 EDT 2026
+starting a bit of the setup to hw5 b4 class
+
+cd to the hw directory, mkdir hw5_aleonav, and `touch` the file to work in 
+put the requested info in as well
+
+continutation of p3, so i'm gonna make a new terminal window there and mv everything over to the current
+hw5 directory that I need, as well as copying my same code that I used.
+actually i havent pushed to github yet so im gonna do that as well to keep up to date.
