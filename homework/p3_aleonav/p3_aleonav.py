@@ -174,14 +174,19 @@ sample_std = np.std(sample)
 print("\nSample stdev: ", sample_std, "\n")
 
 #do the masking of the data, from the L04 file:
-clipped = sample[np.where(np.abs(sample - np.median(sample)) < 5 * sample_std)] #clip where the sample is outside 5sigma
+clipped = sample[np.where(np.abs(sample - np.median(sample)) < 5 * np.sqrt(10000))] #clip where the sample is outside 5sigma
+#Made an error on this before! fixed by using np.sqrt(N) instead of the bad stdev
 print("New samples data:\
 \nMean: ", np.mean(clipped),
 "\nMedian: ", np.median(clipped),
 "\nStdev: ", np.std(clipped))
 
-#now the mean and median line up to be much closer to each other, as well as the std going down signifigantly.
+#now the mean and median line up to be much closer to each other, as well as the std going down signifigantly to expected
+#~sqrt(N) by using the correct clipping values.
 #Before there were very large outliers at the tail end up the data pulling the mean way higher (+ ~4500) from the median
 #(which should be pretty closer to the median w/out outliers, since it follows a poisson dist.)
+
+# %%
+
 
 

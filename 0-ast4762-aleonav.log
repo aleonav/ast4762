@@ -497,7 +497,147 @@ starting a bit of the setup to hw5 b4 class
 
 cd to the hw directory, mkdir hw5_aleonav, and `touch` the file to work in 
 put the requested info in as well
-
 continutation of p3, so i'm gonna make a new terminal window there and mv everything over to the current
 hw5 directory that I need, as well as copying my same code that I used.
 actually i havent pushed to github yet so im gonna do that as well to keep up to date.
+
+Problem 2:
+copied all the code, printed everything before, but there's a couple of new questions here as well:
+How close is the final standard deviation to that expected for the Poisson distribution?
+	the expected would be the sqrt of N, which is 10000. Expected is 100, out stdev is 6000?
+	I HAVE AN ERROR IN P3!!!! I used the stdev of my bad sample instead of the expected sqrt(N),
+	keeping a lot of values outside. I'll head over to class now, and fix that when we start in p3.
+
+*****OUT: 	Fri Sep 25 13:55:26 EDT 2026
+
+
+*****IN: 	Fri Sep 25 14:37:18 EDT 2026
+in class now, i'll correct the error now:
+fixed it and the answers and made a new .py file on it.
+
+class done
+*****OUT: 	Fri Sep 25 16:21:48 EDT 2026
+
+
+*****IN:	Fri Sep 25 17:42:08 EDT 2026
+working more on homework 5:
+back to the questions from before:
+Problem 2)
+How close is the final standard deviation to that expected for the Poisson distribution?
+	expected at 100, the calculated stdev is 99.16, pretty close to the expected value.
+
+Will this method always remove every bad pixel?
+	No, it can definitely be possible for bad or unexpected value to end up within what you
+	consider to be the 'good' range. 0-1e6 has a 1/1000 change of being in the data, which is not 0.
+
+Problem 3)
+time to make another function, touch the .py file for hw5_aleonav_support_function.py
+i'll have linfit.py pulled up as a reference to make sure i dont make any mistakes when making it.
+
+library is closing 
+*****OUT: 	Fri Sep 25 19:04:38 EDT 2026
+
+
+*****IN:	Sat Sep 26 21:20:03 EDT 2026
+working more on hw5
+
+going home
+*****OUT: 	Sat Sep 26 22:05:39 EDT 2026
+
+
+*****IN:	Sun Sep 27 11:04:27 EDT 2026
+working more on hw5, still working on making sigrej
+
+#im pretty confused on having a tuple of two values for the error. Is it an upper and lower limit
+for the data?
+oh its two passes for the same rejection, so we can intrinsicly call the function in its return
+if i put a return statement earlier in that doesnt get activated the first time (i think)
+
+Problem 3:
+hell yea the function worked, so i'll explain it here:
+the problem i was having was that the sigmas were a tuple of how many passes to do with possibly 
+differing values. I handled it like this:
+at the beginning of the function, i have an if statement that asks if len(sigmas) == 0: return mask.
+(mask being the bool array of true / false for data to include). the first round wont have the len as 0,
+so it goes through modifying WHERE the values are greater than n*sigma, sets those as false.
+it then returns itself, return sigrej(data, sigmas[1:], mask) now including the bad values. sigmas will now have
+one less indicies than it did before. This happens until all the len is 0, and all of the runs have happened,
+then returning the mask it was called with.
+
+oh wow that was it all that's left to do is submit. I'll save this for now to look over later and give
+some time to my other hw assignemnts due monday (a lot of them)
+
+*****OUT: 	Sun Sep 27 12:17:01 EDT 2026
+
+
+*****IN:	Mon Sep 28 13:57:20 EDT 2026
+time to submit p3 and hw5 and their .py files. 
+scp both files to stokes by logging in and entering my password,
+testing both by calling python3 after init the conda env, worked!
+
+i'll describe what i'll do after i copy the log in and save it:
+time to upload both folders by copying them to stokes, tar.gz both
+scp to my handin folder after i tar.gz, and upload it into webcourses and submit.
+
+i'll close out the log and do those final steps now
+*****OUT: 	Mon Sep 28 14:04:31 EDT 2026
+
+
+*****IN:	Fri Oct  2 11:11:42 EDT 2026
+okay now i do practium 4 after slaving away with quantum for forever (as much as i can b4 class)
+
+Problem 1:
+This looks like its own connection to hw6, so i'll mkdir for hw6_aleonav and work in there for practicum.
+after downloading and unzipping the hw6_data, i'll mv the directory to my hw6 folder as well.
+touch the .ipynb file also, convert to py before submitting.
+
+Problem 2:
+i'm not sure how to use the os.listdir, so i'll see what it prints
+out and then go from there to get the files w/out the fits.
+
+i see i did datadir wrong, i need the archival_data/ inside the hw6_data, so i'll update that
+okay i got it,
+for fname in os.listdir gives just the file names as strings
+
+create 2 if statements to see if fname[:4] is either 'dark' or 'star', then append to its list 
+if not, just continue to go back in the loop, until all the names have been went through.
+
+c) i notice that these values arent sorted, since os.listdir doesnt sort them.
+it doesn't say that we should sort them, so i wont for now and see what we'll do in class later today.
+
+e)better to not hardcode them so you can see the defined variables in the code. It's much more
+descriptive when used later on than just memorizing that '5' is the size of darkfile
+
+Problem 3:
+im confused about this part. ny x nx is 512 by 512, but per file there's 4 of these, and
+nobj/dark # of files within them, so which do we choose to add if we're making 3D arrays of
+(nobj, by, nx)? We would be forsaking 3 of the other ones if we did do that for each file.
+
+okay my butt is hurting from sitting in this plastic chair in COS so im gonna move somewhere else
+till class.
+
+*****OUT: 	Fri Oct  2 12:21:40 EDT 2026
+
+
+*****IN:	Fri Oct  2 14:22:39 EDT 2026
+in class now
+
+okay it's NOT the archival data im supposed to be doing the rdpharocor ones, i'll modify the loop
+to populate it and then see if it fixes it.
+
+outta class
+*****OUT: 	Fri Oct  2 16:17:20 EDT 2026
+
+
+*****IN:	Fri Oct  2 18:44:53 EDT 2026
+#c) why not print TIME-OBS?
+print(objhead['TIME-OBS'], darkhead["TIME-OBS"])
+#there's nothing.
+#Theyre blank for the images within the headers, apparently TIME-OBS is an older standard:
+#https://listmgr.nrao.edu/pipermail/fitsbits/2002-January/001053.html
+#found this on a mailing list, detailing the TIME vs DATE, to have a more combined
+#standard for storing the date, and having FITS be modern and easier to parse by being combined.
+
+i don't really see submission instructions as well, so I'll put this current version into a 
+.py file, log into stokes and targz everything, scp, yada yada, and then submit and back to github.
+*****OUT: 	Fri Oct  2 19:05:40 EDT 2026
