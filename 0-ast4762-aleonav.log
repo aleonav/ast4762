@@ -641,3 +641,17 @@ print(objhead['TIME-OBS'], darkhead["TIME-OBS"])
 i don't really see submission instructions as well, so I'll put this current version into a 
 .py file, log into stokes and targz everything, scp, yada yada, and then submit and back to github.
 *****OUT: 	Fri Oct  2 19:05:40 EDT 2026
+
+
+*****IN:	Mon Oct  5 14:33:15 EDT 2026
+class
+
+no class
+*****OUT: 	Mon Oct  5 16:18:26 EDT 2026
+
+
+*****IN:	Mon Oct  5 18:20:47 EDT 2026
+starting some of hw6 to get all the files set up for later.
+making a folder for hw7 curiously, so i'll mkdir hw7_aleonav/, as well as moving my .ipynb
+file from practicum with [mv], and i'll later convert it to a .py before submission.
+After making the files with the header, i'll to a push to github before starting on anything.
