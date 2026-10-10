@@ -655,3 +655,247 @@ starting some of hw6 to get all the files set up for later.
 making a folder for hw7 curiously, so i'll mkdir hw7_aleonav/, as well as moving my .ipynb
 file from practicum with [mv], and i'll later convert it to a .py before submission.
 After making the files with the header, i'll to a push to github before starting on anything.
+
+Problem 2:
+	a)
+	can use np.median along the first axis to take the median along the axis holding the arrays.
+
+	b) median value @ [217,184] is 19.0
+
+	c)looking online on any fits function to handle headers, there's a built in .add_history()
+	that handles the formatting for me, which is nice.
+
+	d) use fits.writeto(), and then add_history to the getheader() to complete.
+
+	e) since theyre both arrays, I can make a new value of dark_sub_med = darkdata - dark_median.
+	after that, use .writeto() again for the hw7graph1 file, and print before and after subtraction
+	by printing the value of darkdata and dark_sub_med @ [0][217][184], gives 5. 24 - 19 = 5, makes sense.
+
+logging out cause im moving
+*****OUT: 	Mon Oct 5 19:50:05 EDT 2026
+
+
+*****IN:	Mon Oct  5 20:37:45 EDT 2026
+now i'll get everything packed up and submit.
+
+convert the ipynb to a .py file, and i'll detail what i'll do after i copy in the log:
+
+scp the directory into stokes through the terminal by uploading it, then i'll tar zcf hw7_aleonav.tar.gz to
+zip it within the homework folder, and scp that compressed file back into my handin folder and submit.
+
+I'll backup to github after all of that is done as well.
+*****OUT: 	Mon Oct  5 20:53:06 EDT 2026
+
+
+*****IN:	Tue Oct  6 19:31:17 EDT 2026
+starting on hw7 (mainly reading the papers)
+
+We already have the hw7 folder from hw6, so i'll use the touch command to make a hw7 file in the same directory.
+now i'll get to reading some of the papers for the hw.
+*****OUT: 	Tue Oct  6 20:21:45 EDT 2026
+
+
+*****IN:	Wed Oct  7 14:33:50 EDT 2026
+in class
+
+is the moon cheese
+
+why is it important to know?
+	could we eat it?
+	people who wanna land on the moon, bases, other stuff
+	does it taste good?
+
+how can you figure out which idea is right?
+	send people to eat the cheese (see if they die) (eating is less expensive than spectroscopy or chemical testing)
+	people might die, this is bad
+
+okay no more class
+*****OUT: 	Wed Oct  7 16:22:55 EDT 2026
+
+
+*****IN:	Thu Oct  8 16:19:33 EDT 2026
+working more on hw7, reading the papers
+
+What I learned about the target from each paper:
+
+PAPER1:
+	We're looking at HD189733b, a hot Jupiter, which is likely tidally locked due to it's very close
+	orbit to its parent. This first paper focuses on asking if the upper atmosphere can efficently
+	distribute heat from the daytime side across into the nightime side, which can be observed
+	by looking at the planet's own infrared emission (8µm for this emission) when it is eclipsing
+	the star.
+
+	Measuring these data points had challenges since the parent star is active, having spots which
+	cause increases of flux up to ±1.5%, 13.4 day rotation period. Measurements were scaled with
+	this in mind. 
+	There was also 120±4[s] delay when the planet moved behind the star than expected. Multiple
+	causes for thought were given such as non-uniform emission of the planet, pertubations by other
+	bodies, but the most likely cause was eccentricity of the planet's orbit (as well as time
+	delay for light to cross the system). Min and max temp for the planet's emission was
+	973±33[K] and 1212±11[K].
+
+PAPER2:
+	since then, Redfield has detected atomic sodium in it's atmosphere. Using infrared gives
+	a way better planet / star contrast ratio to better differentiate between the two as well.
+	(no way i see dr. harrington here in a citation) Planet to Star surface area ratio is 2nd
+	largest of all known transiting exoplanets (at least in 2008 of course)
+	This one will go through to get values for planet and stellar R, inclination i, transit time
+	T_c, and orbital period P. There's also a companion M star! 
+	
+	Analysis has to be split between two detectors due to differeing chemistry with both of them,
+	which is noted in the paper. (InSb, Si:As, which correspond to the (3.6, 4.5 µm) and 
+	(5.8, 8.0µm) channels. The effect mentioned in class and in the other paper about the effective
+	gain of the pixels increasing with time is here too, "detector ramp". Within MIPS observation,
+	they talk about the 3\sig clipping from the median value too, that's cool.
+	Water absorption within the spectra too. (contrast to another planet that has emission)
+	Some comparisons to that planet are noted. 
+
+	Observed data from 3.6 - 8.0µm favors a model that assumes no redist of energy to the night
+	side, but in constrast with the previous paper's findings with a relatively flat min/max temp.
+	Could be that the planet emits much less at shorter wavelengths, and also distribution might
+	be depth dependent in the atmosphere.
+
+	In this paper, 5 / 6 bandpasses say that the eclipise center occurs at time expected of a
+	circular orbit, and not that of an offset like before. However eclipse at 3.6µm observed
+	to arrive 5.6±0.8 minutes later than expected. Def not orbital variations, but maybe
+	from brightness variations across visible hemisphere of planet. But, this band is the one 
+	with the largest corrections from the time dep. sensitivity, and largest noise.
+
+im gonna get some food before i start on anything else
+*****OUT: 	Thu Oct  8 17:46:08 EDT 2026
+
+
+*****IN:	Thu Oct  8 18:23:07 EDT 2026
+reading paper 3 now
+
+PAPER3:
+	This one is using hubble to observe our target, measuring albedo, observing a decrease with
+	longer wavelengths (<0.12) across 450-570nm. Abstract states evidence for optically thick
+	reflective clouds on the daytime side, sodium absorption supressing signal beyond ~450nm. 
+	It (would appear) to be a deep blue! 
+
+	There's a period missing on the first page i kept trying to find it for like a minute.
+	A lotta methods on working with hubble and adjusting the data before analysis.
+
+	Second figure showing the much sharper drop in flux in the shorter wavelengths than in the 
+	longer ones. Blue color attributed to that. I kinda don't understand how theyre explaining the
+	mathematical modeling and the function they fit it to, I hope we go over some of it in class.
+
+	A lot of this paper is modeling, and the results just sigma reduction on previous studies
+	that also suggested that the albedo decreases over visible range of the spectrum. Noted that
+	cause of the optical reflection is still hard to rule down, since the data has limited precision
+	with their tools. Some multiple possibilities are listed.
+
+PAPER4:
+	oh wow this one is really long
+	It's 2024 now, and we're living in the future with JWST. New version of PLATON for atmosphere
+	oberserving as well, 10x faster w/ using the GPU. H_2O, CO_2, CO, H_2S all in transmission and
+	emission spectra. 
+
+	Big section on data redux again, and explaining the exp ramp and linear functions of the curve.
+
+	Wow these dips in figure 1 are a lot better than those of spitzer. I wonder what the wave
+	behavior of the flux is before the planet transists is from.
+
+	There was a bug in earlier measurements , NIRCam wavelength calibration was off by ~30nm for 
+	some regions. F322W2 bin exluded from the spectra in the science.
+
+	There's a section comparing to Spitzer as well, support that the channel 1 not very good for
+	exoplanet observation, also being inconsistent with JWST data.
+
+	Big section on PLATON 6, and it's new features that it adds, including GPU support to speed
+	up the code. 3 weeks -> 2 days (with a 4090) but still a lot lot faster. 
+	This is really confusing
+
+	For modeling the absorption, removing CH_4 improves fit by ∆X^2 of 3.3, and anything else is a
+	lot worse. Extrememly strong water and carbon dioxide absorption peaks, def w/in atmopshere.
+	In all 11 species of compounds in retrievals, not all have signifigant contributions to the
+	best fit model, only water, CO_2, CO, H_2S, and CH_4 have significant contributions to opacity.
+
+	I'm hearing a lot about methane depletion, C/O ratio and it's relation to metallicity, but I
+	cant really understand what the correlation is from the writing or what these effects are.
+
+	Section on comparison with WASP-39b and HD209458b. Transmission is a lot higher in the ~2.7µm 
+	range for our target, with similar to the other scross the 304µm wavelength range. 
+
+	Ah i see it's metallicity of the parent star, 2.6-6.8x the metallicity of the sun, with C/O
+	ratio within those metals around 0.42. 
+
+im gonna take a break from doing more of this for now
+*****OUT: 	Thu Oct  8 20:14:42 EDT 2026
+
+
+*****IN:	Fri Oct  9 11:50:44 EDT 2026
+gonna work some more on the homework before we have class today
+
+Problem 3:
+	actually using the help() command for pyplot to see to arguments, its kinda easier like this
+	sometimes.
+
+	okay what is a box rectangle window function did we learn that i and i just forgot
+	time to ask jarvis (google.com)
+	oh its easy its just a boolean function where the value is inside a certain width
+	so a certain time for this function, but why are we given height if we arent calling it in the 
+	array? I'm confused on that bc the height seems like i cant do anything w/ it.
+
+	yeah i have no idea ill ask in class and work on other hw for now
+
+*****OUT: 	Fri Oct  9 12:48:45 EDT 2026
+
+
+*****IN:	Fri Oct  9 14:39:10 EDT 2026
+in class
+no more class
+*****OUT: 	Fri Oct  9 16:20:50 EDT 2026
+
+
+*****IN:	Fri Oct  9 17:51:02 EDT 2026
+working more on hw7 prob3
+
+Problem 3 (cont):
+	oh I see we're modeling the function that was given and getting the values for that to just
+	isolate the dip and that's pretty much it.
+
+	so we're putting in where we want the inside to be, and guessing how far down the height is
+	(which is the drop) [at least i think so]
+
+	okay i did something wrong cause my popt values are 3x2 of [0, 0.2, 0.009, inf, inf, etc]
+	oh thats just the cov matrix i had to define it for it not to be lumped within popt crisis
+	averted.
+
+	it does work, but im noticing that when i change the middle guess value (the width), it just
+	directly uses my guess as the actual plot, and curve fit doesnt seem to be doing anything?
+	Also happens with the center. If i change the depth, that does change stuff tho.
+
+lib is closing
+
+*****OUT: 	Fri Oct  9 18:43:36 EDT 2026
+
+
+*****IN:	Fri Oct  9 19:00:32 EDT 2026
+moved to the physics help room cause its friday and there's nobody here.
+
+Problem 3 (cont):
+	b)
+	ii)
+	Can we believe the fit?
+	if you guess good values, sure. The only part that's actually doing any minimization is the
+	height, which actually changes to minimize to a value.
+
+	What to do if you cant?
+	be correct in your guesses for the width and center? Or you can find the actual width values 
+	numerically by seeing np.where()values really low, but might be harder on a real data set of
+	course. 
+
+	iii)
+	properties are center = 0, width = 0.02, height = 0.00979 (∆F/F)
+	i'll do the calculation of R_p in the code under the #iii) section
+	0.113 * R_star
+
+	c) error propagation time
+	0.012 R_star, calculation went in the code. 
+
+I am done now yippee. I won't submit yet or test on stokes since I'm pretty tired, but I will save
+the file, log, and backup to github. I'll check over it again before I submit.
+
+*****OUT: 	Fri Oct  9 20:02:18 EDT 2026
