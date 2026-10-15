@@ -931,3 +931,46 @@ I now have hte 5 dark files instead of the 2 from before.
 i'll back up the correct directories to github and start the practicum later when i have more time to
 sit down and get to it.
 *****OUT: 	Tue Oct 13 15:35:21 EDT 2026
+
+
+*****IN:	Wed Oct 14 14:28:20 EDT 2026
+in class
+(make a note not to submit source data w/ hw8 or p5)
+
+in class assignemnt:
+
+with fits.open(fname) as f:
+need to figure out how to get the data from the file, so i'll print it
+nothing, i'm trying to get f[1] for the numpy array but it's saying that it's out of range, which is odd.
+found it, it's f[0].data
+
+okay nevermind i'm using fits.getdata() now, and setting flat_data = to that
+takes like ~40s to make the histogram
+
+*****IN:	Thu Oct 15 16:36:07 EDT 2026
+working on p5
+before i get started on anything im gonna check if my routines in hw7 were correct for the functions
+by comparing it to the solution that was provided.
+seems to all be good, i'll start on the function in practicum in my file.
+
+for problem 3 after i built the function, it says "call it for your obj - darkdata in hw6", but i 
+cant find anywhere that we actually did this within hw 6, only with the individuals. I'll go ahead
+and subtract them and import everything from hw6 as well.
+
+that seems to be it for p5, cool. I'll compress and tar everything after i get some water from
+somewhere, i forgot my water bottle at home today.
+
+be back in a bit unless i end up going home,
+*****OUT: 	Thu Oct 15 17:26:54 EDT 2026
+
+
+*****IN:	Thu Oct 15 18:40:33 EDT 2026
+the old ucf global building has a whole bunch of desks now and no one comes here this is awesome
+(DONT TELL ANYONE!!!!)
+
+packing everything up with practicum 5:
+uploading the folder to stokes, i'll make sure not to include the source data this time, and i'll
+remove the directory before tar.gz'ing and scp to my handin folder.
+
+i'll backup to github after, put this log in, and submit.
+*****OUT: 	Thu Oct 15 18:46:34 EDT 2026
