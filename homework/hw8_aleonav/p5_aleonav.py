@@ -12,7 +12,6 @@ from hw6_aleonav import *
 
 # %%
 #normmedcomb:
-from numpy.linalg import norm
 
 
 print("Problem 2")
@@ -67,7 +66,7 @@ def normmedcomb(data, corner_coords = None):
 print('Problem 3')
 #do this here since we didn't actually do it in hw6
 objsubdark = objdata - dark_median
-region = ((255, 255), (-255, -255))
+region = ((225, 225), (-225, -225))
 
 #call function:
 sky_mednorm, norm_factors = normmedcomb(objsubdark, region)
@@ -83,6 +82,6 @@ fits.writeto('sky_13s_mednorm.fits', sky_mednorm)
 
 # %%
 print(norm_factors)
-#[10906. 11098. 10578. 10599. 11088. 10665.  9956.  9955.  9899.]
+#[10864. 11057. 10536. 10559. 11046. 10623.  9916.  9916.  9859.]
 
 
